@@ -14,6 +14,7 @@ class AuthController(private val tokenService: TokenService) {
     @PostMapping("/token")
     fun getToken(authentication: Authentication): String{
         val token = tokenService.generateToken(authentication)
+        LOG.debug("token: {}", token)
         return token
     }
 

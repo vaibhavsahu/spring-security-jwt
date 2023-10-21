@@ -8,7 +8,6 @@ import org.springframework.security.oauth2.jwt.JwtEncoderParameters
 import org.springframework.stereotype.Service
 import java.time.Instant
 import java.time.temporal.ChronoUnit
-import javax.print.attribute.standard.Chromaticity
 
 @Service
 class TokenService(private val jwtEncoder: JwtEncoder) {

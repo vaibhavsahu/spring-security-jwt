@@ -37,7 +37,7 @@ class SecurityConfig(private val rsaKeys: RsaKeyProperties) {
         return InMemoryUserDetailsManager(User.withUsername("test")
             .password("{noop}password")
             .authorities("read")
-            .build());
+            .build())
     }
 
     @Bean
